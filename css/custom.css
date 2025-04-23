@@ -1,0 +1,94 @@
+.btn{
+    border-radius: 50%;
+}
+
+.hidden{
+    display: none;
+}
+
+.header{
+    height: 10vh;
+}
+
+
+
+.asideNav a,summary{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    user-select: none;
+}
+
+.asideNav li:hover{
+    background-color: #1B4965 !important;
+    color: white;
+}
+
+.asideNav summary:hover{
+    background-color: #1B4965 !important;
+    color: white;
+}
+
+.asideNav {
+    li,summary{
+    list-style: none;
+    padding: 10px;
+    border-bottom: 1px solid #1B4965;
+    font-size: 20px;
+    padding-left: 50px;
+}
+}
+
+
+.aside{
+    width: 20%;
+    background-color: white;
+    position: relative;
+    margin: 0%;
+    height: 89vh;
+    overflow-x: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+
+.content{
+    width: 80%;
+    height: 89vh;
+    /* background-color: bisque; */
+    background-color: #B4C5E4;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    transition: width 0.5s ease-in-out;
+}
+
+.content h1{
+    color: lightcyan;
+}
+
+.subpost{
+    width: 508px;
+}
+
+details a{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease 0.4s, transform 0.4s ease 0.4s;
+  }
+  
+  details[open] a{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fdis a:hover{
+    width: 85%;
+    background-color: var(--secondary) !important;
+    transition: width 0.3s ease-in-out;
+    p{
+        color: white !important;
+    }
+}

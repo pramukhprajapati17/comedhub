@@ -1,0 +1,13 @@
+.burger{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.line{
+    width: 33px;
+    height: 4px;
+    margin: 5px 5px;
+    background-color: Black;
+}

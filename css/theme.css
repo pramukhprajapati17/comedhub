@@ -1,0 +1,100 @@
+*{
+    font-family: 'Segoe UI';
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --primary: #2F80ED !important;
+    --secondary: #56CCF2 !important;
+    --third: #f2c94c !important;
+    --fourth: #1B4965 !important;
+    --danger: #EB5757 !important;
+    --background: #F5F8FA !important;
+    --freeze: #B4C5E4 !important;
+    --green: #27AE60 !important;
+    --black: #000000 !important;
+    --white: #FFFFFF !important;
+}
+
+
+.bg{
+    background-color: var(--freeze);
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.bg-secondary{
+    background-color: var(--secondary) !important;
+}
+
+.bg-green{
+    background-color: var(--green) !important;
+}
+
+.bg-red{
+    background-color: var(--danger) !important;
+}
+.bg-third{
+    background-color: var(--third) !important;
+}
+
+.bg-fourth{
+    background-color: var(--fourth) !important;
+}
+.bg-freeze{
+    background-color: var(--freeze);
+}
+
+.bg-white{
+    background-color: white !important;
+}
+
+.text-primary{
+    color: var(--primary) !important;
+}
+.text-secondary{
+    color: var(--secondary) !important;
+}
+.text-third{
+    color: var(--third) !important;
+}
+.text-fourth{
+    color: var(--fourth) !important;
+}
+.text-freeze{
+    color: var(--freeze) !important;
+}
+
+.text-white{
+    color: white !important;
+}
+
+
+.text-black{
+    color: black !important;
+}
+
+.text-red{
+    color: var(--danger) !important;
+}
+
+.text-green{
+    color: var(--green) !important;
+}
+
+
+.border-third{
+    border: 2px solid var(--fourth) !important;
+    border-radius: 10px;
+}
+
+.border-secondary{
+    border: 2px solid var(--secondary) !important;
+    border-radius: 10px;
+}
+.border-primary{
+    border: 1px solid var(--primary) !important;
+    border-radius: 10px;
+}
