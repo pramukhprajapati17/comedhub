@@ -15,7 +15,13 @@
       $city = $_POST['city'];
       $mobile = $_POST['mobile'];
       $password = $_POST['password'];
-      
+      $csql = "SELECT * FROM students WHERE email='$email'";
+      $cresult = $conn->query($csql);
+      if ($cresult->num_rows > 0) {
+          echo "<script>alert('Email already exists!');</script>";
+          echo "<script>window.location.href='http://localhost/comedhub/student/registration.php'</script>";
+          exit;
+      }
       // Insert into database
       $sql = "INSERT INTO students (email, fname, lname, enrollment, sem, course, college, university, city, mobile, password) VALUES ('$email', '$fname', '$lname', '$enrollment', '$sem', '$course', '$college', '$university', '$city', '$mobile', '$password')";
       
