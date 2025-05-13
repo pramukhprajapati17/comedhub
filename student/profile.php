@@ -173,7 +173,7 @@ $student = $result->fetch_assoc();
               </form>
             </div>
             <?php
-                echo"<h4 class='bg w-100 mb-0 mt5 text-center '>© 2025 COMEDHUB. All rights reserved.</h4>";
+                echo"<h4 class='bg w-100 mb-0 mt5 text-center '>© 2025 COMPEDHUB. All rights reserved.</h4>";
             ?>
         </div>
     </div>

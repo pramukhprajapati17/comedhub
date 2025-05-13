@@ -1,9 +1,9 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
-$dbname = "comedhub";
-$port = 3307;
+$password = "9114@Kapvy";
+$dbname = "compedhub";
+$port = 3306;
 
 $conn = mysqli_connect($servername, $username, $password, $dbname, $port);
 
