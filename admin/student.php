@@ -52,10 +52,11 @@ $home = "http://localhost/comedhub/admin";
                                 $sem = "SELECT DISTINCT sem FROM files";
                                 $resultsem = $conn->query($sem);
                                 // select subject unique from database
-                                $subject = "SELECT DISTINCT subject FROM files";
-                                $resultsubject = $conn->query($subject);
+                                
                                 if ($resultsem->num_rows > 0) {
                                     while ($semrow = $resultsem->fetch_assoc()) {
+                                        $subject = "SELECT DISTINCT subject FROM files WHERE sem = '{$semrow['sem']}'";
+                                        $resultsubject = $conn->query($subject);
                                         echo "<details>";
                                         echo "<summary>Semester-".$semrow['sem']."</summary>";
                                         while ($subjectrow = $resultsubject->fetch_assoc()) {
