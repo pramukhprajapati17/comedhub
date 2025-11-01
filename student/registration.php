@@ -51,14 +51,14 @@
     <img src="../images/logo.png" alt="COMPEDHUB Logo" class="logo block m-auto mb2" />
     <h2 class="text-center text-fourth f3 mb3">Student Registration</h2>
     <form action="registration.php" method="POST" class="text-center" onsubmit="return validateForm()">
-      <div class="flex w-100 m1 items-center justify-center">
-        <input type="email" name="email" placeholder="Email ID" required class="input w-60 ml1 text-center" />
+      <div class="flex w-100 m1 items-center justify-start">
+        <input type="email" name="email" placeholder="Email ID" required class="input w-80 text-center pr4" />
       </div>
-      <div class="flex w-100 m1 items-center justify-center" style="flex-wrap: wrap;">
+      <div class="flex w-100 m1 items-center justify-start" style="flex-wrap: wrap;">
         <input type="text" name="fname" placeholder="First Name" required pattern="[A-Za-z]{2,}" title="Enter a valid first name" class="input mr2 mb2" />
         <input type="text" name="lname" placeholder="Last Name" required pattern="[A-Za-z]{2,}" title="Enter a valid last name" class="input mr2 mb2" />
         <input type="text" name="enrollment" placeholder="Enrollment Number" required pattern="[A-Za-z0-9]{6,}" title="Minimum 6 characters" class="input mr2 mb2" />
-        <input type="number" name="sem" placeholder="Current Semester" required pattern="[1-9]|1[0-2]" min="1" title="Enter a valid semester (1-12)" class="input mr2 mb2" />
+        <input type="number" name="sem" placeholder="Sem" required pattern="[1-9]|1[0-2]" min="1" max='8' title="Enter a valid semester (1-12)" class="input mr2 mb2" />
         <input type="text" name="course" placeholder="Course Name" required class="input mr2 mb2" />
         <input type="text" name="college" placeholder="College Name" required class="input mr2 mb2" />
         <input type="text" name="university" placeholder="University Name" required class="input mr2 mb2" />
@@ -68,7 +68,7 @@
         <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required class="input mr2 mb2" />
       </div>
       <div class="flex w-90 pl4 justify-between items-center">
-        <input type="submit" value="Register" name="Register" class="btn-register bg-fourth text-white rounded p1 ml1">
+        <input type="submit" value="Register" name="Register" class="btn-register bg-fourth text-white rounded p1" style="cursor:pointer" />
         <a href="http://localhost/comedhub/student/login.php" class="text-fourth mr2">Already have an account? Login</a>
       </div>
     </form>
