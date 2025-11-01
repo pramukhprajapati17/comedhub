@@ -58,7 +58,7 @@ else {
         <div class="rightHeader flex items-center justify-end w-50">
             <?php
             if(isset($_SESSION['email'])) {
-                echo "<a href='http://localhost/comedhub/admin/profile.php'><img src='../images/profile.png' alt='profile' class='' style='width: 65px; top: 4px; border: radius 50%; position:relative'></a>";
+                echo "<a href='http://localhost/comedhub/student/profile.php'><img src='../images/profile.png' alt='profile' class='' style='width: 65px; top: 4px; border: radius 50%; position:relative'></a>";
             } else {
                 // Display the profile image for students
                 echo "";
